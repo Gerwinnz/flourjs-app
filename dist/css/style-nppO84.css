@@ -1,0 +1,4093 @@
+@charset "UTF-8";
+/*
+|
+|	Include vendor css files
+|
+*/
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/*
+* Skeleton V2.0.2
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/15/2014
+*/
+/* Table of contents
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 31, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box; }
+
+/* line 39, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.column, .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  /* line 46, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .container {
+    width: 95%;
+    padding: 0; } }
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  /* line 53, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .container {
+    width: 90%; }
+  /* line 56, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .column, .columns {
+    margin-left: 4%; }
+  /* line 59, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .column:first-child, .columns:first-child {
+    margin-left: 0; }
+  /* line 63, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .one.column, .one.columns {
+    width: 4.66667%; }
+  /* line 64, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .two.columns {
+    width: 13.33333%; }
+  /* line 65, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .three.columns {
+    width: 22%; }
+  /* line 66, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .four.columns {
+    width: 30.66667%; }
+  /* line 67, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .five.columns {
+    width: 39.33333%; }
+  /* line 68, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .six.columns {
+    width: 48%; }
+  /* line 69, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .seven.columns {
+    width: 56.66667%; }
+  /* line 70, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .eight.columns {
+    width: 65.33333%; }
+  /* line 71, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .nine.columns {
+    width: 74%; }
+  /* line 72, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .ten.columns {
+    width: 82.66667%; }
+  /* line 73, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .eleven.columns {
+    width: 91.33333%; }
+  /* line 74, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0; }
+  /* line 76, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .one-third.column {
+    width: 30.66667%; }
+  /* line 77, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .two-thirds.column {
+    width: 65.33333%; }
+  /* line 79, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .one-half.column {
+    width: 48%; }
+  /* Offsets */
+  /* line 83, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-one.column, .offset-by-one.columns {
+    margin-left: 8.66667%; }
+  /* line 85, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-two.column, .offset-by-two.columns {
+    margin-left: 17.33333%; }
+  /* line 87, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-three.column, .offset-by-three.columns {
+    margin-left: 26%; }
+  /* line 89, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-four.column, .offset-by-four.columns {
+    margin-left: 34.66667%; }
+  /* line 91, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-five.column, .offset-by-five.columns {
+    margin-left: 43.33333%; }
+  /* line 93, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-six.column, .offset-by-six.columns {
+    margin-left: 52%; }
+  /* line 95, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-seven.column, .offset-by-seven.columns {
+    margin-left: 60.66667%; }
+  /* line 97, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-eight.column, .offset-by-eight.columns {
+    margin-left: 69.33333%; }
+  /* line 99, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-nine.column, .offset-by-nine.columns {
+    margin-left: 78%; }
+  /* line 101, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-ten.column, .offset-by-ten.columns {
+    margin-left: 86.66667%; }
+  /* line 103, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-eleven.column, .offset-by-eleven.columns {
+    margin-left: 95.33333%; }
+  /* line 106, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-one-third.column, .offset-by-one-third.columns {
+    margin-left: 34.66667%; }
+  /* line 108, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-two-thirds.column, .offset-by-two-thirds.columns {
+    margin-left: 69.33333%; }
+  /* line 111, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  .offset-by-one-half.column, .offset-by-one-half.columns {
+    margin-left: 52%; } }
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton 
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+/* line 121, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 123, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Gotham", sans-serif;
+  color: #222; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 133, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+
+/* line 137, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem; }
+
+/* line 138, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem; }
+
+/* line 139, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem; }
+
+/* line 140, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem; }
+
+/* line 141, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem; }
+
+/* line 142, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  /* line 146, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  h1 {
+    font-size: 5rem; }
+  /* line 147, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  h2 {
+    font-size: 4.2rem; }
+  /* line 148, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  h3 {
+    font-size: 3.6rem; }
+  /* line 149, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  h4 {
+    font-size: 3rem; }
+  /* line 150, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  h5 {
+    font-size: 2.4rem; }
+  /* line 151, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+  h6 {
+    font-size: 1.5rem; } }
+
+/* line 154, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+p {
+  margin-top: 0; }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 160, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+a {
+  color: #1EAEDB; }
+
+/* line 162, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+a:hover {
+  color: #0FA0CE; }
+
+/* Buttons 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 172, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* line 198, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 206, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+
+/* line 219, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 234, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkard default styles on some inputs for iOS */
+/* line 249, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 254, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/* line 265, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+input[type="email"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+/* line 269, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+label, legend {
+  display: block;
+  margin-bottom: .5rem; }
+
+/* line 272, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+/* line 276, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline; }
+
+/* line 278, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 286, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+ul {
+  list-style: circle inside; }
+
+/* line 288, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+ol {
+  list-style: decimal inside; }
+
+/* line 290, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+
+/* line 296, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+ul ul, ul ol, ol ol, ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+
+/* line 299, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+li {
+  margin-bottom: 1rem; }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 305, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+
+/* line 313, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 322, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+
+/* line 327, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+th:first-child, td:first-child {
+  padding-left: 0; }
+
+/* line 330, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+th:last-child, td:last-child {
+  padding-right: 0; }
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 337, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+button, .button {
+  margin-bottom: 1rem; }
+
+/* line 342, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+input, textarea, select, fieldset {
+  margin-bottom: 1.5rem; }
+
+/* line 353, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+pre, blockquote, form, dl, figure, table, p, ul, ol, form {
+  margin-bottom: 2.5rem; }
+
+/* line 355, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+p {
+  margin-top: 0; }
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 361, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* line 364, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* line 367, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.u-pull-right {
+  float: right; }
+
+/* line 369, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.u-pull-left {
+  float: left; }
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* line 375, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+/* line 388, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_skeleton.scss */
+.container:after, .row:after, .u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries 
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it 
+there. 
+*/
+/* Larger than mobile */
+/* Larger than phablet (also point when grid becomes active) */
+/* Larger than tablet */
+/* Larger than desktop */
+/* Larger than Desktop HD */
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+/* line 10, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+/* line 17, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/* line 22, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@-webkit-keyframes bounce {
+  /* line 28, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  /* line 35, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+
+  /* line 42, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+
+  /* line 49, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+@keyframes bounce {
+  /* line 56, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  /* line 64, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    -ms-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0); }
+
+  /* line 72, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0); }
+
+  /* line 80, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    -ms-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0); } }
+
+/* line 87, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom; }
+
+@-webkit-keyframes flash {
+  /* line 96, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  /* line 100, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  25%, 75% {
+    opacity: 0; } }
+
+@keyframes flash {
+  /* line 106, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  /* line 110, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  25%, 75% {
+    opacity: 0; } }
+
+/* line 115, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes pulse {
+  /* line 123, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 128, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+
+  /* line 133, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes pulse {
+  /* line 140, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 146, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -ms-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+
+  /* line 152, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+/* line 159, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse; }
+
+@-webkit-keyframes rubberBand {
+  /* line 165, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 170, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+
+  /* line 175, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+
+  /* line 180, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+
+  /* line 185, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1); }
+
+  /* line 190, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1); }
+
+  /* line 195, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes rubberBand {
+  /* line 202, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 208, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+
+  /* line 214, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+
+  /* line 220, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+
+  /* line 226, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    -ms-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1); }
+
+  /* line 232, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    -ms-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1); }
+
+  /* line 238, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+/* line 245, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand; }
+
+@-webkit-keyframes shake {
+  /* line 251, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  /* line 256, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+
+  /* line 261, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); } }
+
+@keyframes shake {
+  /* line 268, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+  /* line 274, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+
+  /* line 280, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    -ms-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); } }
+
+/* line 287, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake; }
+
+@-webkit-keyframes swing {
+  /* line 293, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg); }
+
+  /* line 298, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg); }
+
+  /* line 303, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg); }
+
+  /* line 308, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg); }
+
+  /* line 313, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg); } }
+
+@keyframes swing {
+  /* line 320, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    -ms-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg); }
+
+  /* line 326, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    -ms-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg); }
+
+  /* line 332, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    -ms-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg); }
+
+  /* line 338, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    -ms-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg); }
+
+  /* line 344, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    -ms-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg); } }
+
+/* line 351, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.swing {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing; }
+
+@-webkit-keyframes tada {
+  /* line 360, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 365, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg); }
+
+  /* line 370, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+
+  /* line 375, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+
+  /* line 380, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes tada {
+  /* line 387, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+
+  /* line 393, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg); }
+
+  /* line 399, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
+
+  /* line 405, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
+
+  /* line 411, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+/* line 418, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes wobble {
+  /* line 426, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: none;
+    transform: none; }
+
+  /* line 431, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+
+  /* line 436, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+
+  /* line 441, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+
+  /* line 446, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+
+  /* line 451, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+
+  /* line 456, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes wobble {
+  /* line 463, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+
+  /* line 469, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    -ms-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg); }
+
+  /* line 475, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg); }
+
+  /* line 481, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg); }
+
+  /* line 487, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    -ms-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg); }
+
+  /* line 493, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg); }
+
+  /* line 499, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 506, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble; }
+
+@-webkit-keyframes bounceIn {
+  /* line 512, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 517, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+
+  /* line 523, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+
+  /* line 528, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9); }
+
+  /* line 533, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+
+  /* line 539, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97); }
+
+  /* line 544, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes bounceIn {
+  /* line 552, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 557, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+
+  /* line 564, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+
+  /* line 570, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    -ms-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9); }
+
+  /* line 576, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    -ms-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+
+  /* line 583, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    -ms-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97); }
+
+  /* line 589, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+/* line 597, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s; }
+
+@-webkit-keyframes bounceInDown {
+  /* line 605, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 610, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0); }
+
+  /* line 616, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+
+  /* line 622, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+
+  /* line 627, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+
+  /* line 632, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInDown {
+  /* line 639, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 644, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    -ms-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0); }
+
+  /* line 651, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    -ms-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0); }
+
+  /* line 658, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+
+  /* line 664, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0); }
+
+  /* line 670, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 677, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown; }
+
+@-webkit-keyframes bounceInLeft {
+  /* line 683, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 688, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0); }
+
+  /* line 694, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0); }
+
+  /* line 700, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+
+  /* line 705, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0); }
+
+  /* line 710, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInLeft {
+  /* line 717, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 722, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    -ms-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0); }
+
+  /* line 729, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    -ms-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0); }
+
+  /* line 736, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0); }
+
+  /* line 742, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    -ms-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0); }
+
+  /* line 748, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 755, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft; }
+
+@-webkit-keyframes bounceInRight {
+  /* line 761, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 766, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+
+  /* line 772, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+
+  /* line 778, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+
+  /* line 783, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+
+  /* line 788, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes bounceInRight {
+  /* line 795, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 800, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    -ms-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0); }
+
+  /* line 807, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    -ms-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0); }
+
+  /* line 814, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    -ms-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0); }
+
+  /* line 820, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    -ms-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0); }
+
+  /* line 826, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 833, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight; }
+
+@-webkit-keyframes bounceInUp {
+  /* line 839, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 844, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0); }
+
+  /* line 850, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+
+  /* line 856, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+
+  /* line 861, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+
+  /* line 866, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes bounceInUp {
+  /* line 873, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+  /* line 878, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+    -ms-transform: translate3d(0, 3000px, 0);
+    transform: translate3d(0, 3000px, 0); }
+
+  /* line 885, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+
+  /* line 892, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+
+  /* line 898, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0); }
+
+  /* line 904, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/* line 911, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp; }
+
+@-webkit-keyframes bounceOut {
+  /* line 917, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9); }
+
+  /* line 922, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+
+  /* line 928, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); } }
+
+@keyframes bounceOut {
+  /* line 936, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    -ms-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9); }
+
+  /* line 942, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    -ms-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+
+  /* line 949, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); } }
+
+/* line 957, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s; }
+
+@-webkit-keyframes bounceOutDown {
+  /* line 965, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+
+  /* line 970, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+
+  /* line 976, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+
+@keyframes bounceOutDown {
+  /* line 984, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+
+  /* line 990, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0); }
+
+  /* line 997, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    -ms-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+
+/* line 1005, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown; }
+
+@-webkit-keyframes bounceOutLeft {
+  /* line 1011, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+
+  /* line 1017, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+
+@keyframes bounceOutLeft {
+  /* line 1025, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(20px, 0, 0);
+    -ms-transform: translate3d(20px, 0, 0);
+    transform: translate3d(20px, 0, 0); }
+
+  /* line 1032, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+
+/* line 1040, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceOutLeft {
+  -webkit-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft; }
+
+@-webkit-keyframes bounceOutRight {
+  /* line 1046, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+
+  /* line 1052, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+
+@keyframes bounceOutRight {
+  /* line 1060, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    opacity: 1;
+    -webkit-transform: translate3d(-20px, 0, 0);
+    -ms-transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-20px, 0, 0); }
+
+  /* line 1067, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+
+/* line 1075, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceOutRight {
+  -webkit-animation-name: bounceOutRight;
+  animation-name: bounceOutRight; }
+
+@-webkit-keyframes bounceOutUp {
+  /* line 1081, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+
+  /* line 1086, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+
+  /* line 1092, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+@keyframes bounceOutUp {
+  /* line 1100, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0); }
+
+  /* line 1106, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 45% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    -ms-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0); }
+
+  /* line 1113, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    -ms-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+/* line 1121, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp; }
+
+@-webkit-keyframes fadeIn {
+  /* line 1127, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 1131, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  /* line 1137, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 1141, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1; } }
+
+/* line 1146, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInDown {
+  /* line 1152, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+
+  /* line 1158, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDown {
+  /* line 1166, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+
+  /* line 1173, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1181, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInDownBig {
+  /* line 1187, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
+
+  /* line 1193, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDownBig {
+  /* line 1201, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    -ms-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); }
+
+  /* line 1208, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1216, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig; }
+
+@-webkit-keyframes fadeInLeft {
+  /* line 1222, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+
+  /* line 1228, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeft {
+  /* line 1236, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+
+  /* line 1243, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1251, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInLeftBig {
+  /* line 1257, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+
+  /* line 1263, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeftBig {
+  /* line 1271, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); }
+
+  /* line 1278, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1286, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig; }
+
+@-webkit-keyframes fadeInRight {
+  /* line 1292, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+
+  /* line 1298, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInRight {
+  /* line 1306, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+
+  /* line 1313, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1321, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInRightBig {
+  /* line 1327, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); }
+
+  /* line 1333, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInRightBig {
+  /* line 1341, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); }
+
+  /* line 1348, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1356, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig; }
+
+@-webkit-keyframes fadeInUp {
+  /* line 1362, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+
+  /* line 1368, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUp {
+  /* line 1376, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+
+  /* line 1383, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1391, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInUpBig {
+  /* line 1397, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); }
+
+  /* line 1403, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUpBig {
+  /* line 1411, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    -ms-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); }
+
+  /* line 1418, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 1426, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig; }
+
+@-webkit-keyframes fadeOut {
+  /* line 1432, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1436, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  /* line 1442, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1446, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0; } }
+
+/* line 1451, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOutDown {
+  /* line 1457, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1461, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+
+@keyframes fadeOutDown {
+  /* line 1469, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1473, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+
+/* line 1481, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+
+@-webkit-keyframes fadeOutDownBig {
+  /* line 1487, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1491, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+
+@keyframes fadeOutDownBig {
+  /* line 1499, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1503, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    -ms-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0); } }
+
+/* line 1511, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutDownBig {
+  -webkit-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig; }
+
+@-webkit-keyframes fadeOutLeft {
+  /* line 1517, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1521, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes fadeOutLeft {
+  /* line 1529, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1533, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+/* line 1541, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft; }
+
+@-webkit-keyframes fadeOutLeftBig {
+  /* line 1547, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1551, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+
+@keyframes fadeOutLeftBig {
+  /* line 1559, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1563, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    -ms-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0); } }
+
+/* line 1571, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutLeftBig {
+  -webkit-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig; }
+
+@-webkit-keyframes fadeOutRight {
+  /* line 1577, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1581, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+@keyframes fadeOutRight {
+  /* line 1589, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1593, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); } }
+
+/* line 1601, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight; }
+
+@-webkit-keyframes fadeOutRightBig {
+  /* line 1607, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1611, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+
+@keyframes fadeOutRightBig {
+  /* line 1619, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1623, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    -ms-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0); } }
+
+/* line 1631, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutRightBig {
+  -webkit-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig; }
+
+@-webkit-keyframes fadeOutUp {
+  /* line 1637, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1641, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+
+@keyframes fadeOutUp {
+  /* line 1649, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1653, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); } }
+
+/* line 1661, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp; }
+
+@-webkit-keyframes fadeOutUpBig {
+  /* line 1667, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1671, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+@keyframes fadeOutUpBig {
+  /* line 1679, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 1683, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    -ms-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0); } }
+
+/* line 1691, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.fadeOutUpBig {
+  -webkit-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig; }
+
+@-webkit-keyframes flip {
+  /* line 1697, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+  /* line 1704, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+  /* line 1711, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+
+  /* line 1718, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+
+  /* line 1725, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
+
+@keyframes flip {
+  /* line 1734, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+  /* line 1742, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -ms-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+  /* line 1750, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -ms-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+
+  /* line 1758, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
+    -ms-transform: perspective(400px) scale3d(.95, .95, .95);
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+
+  /* line 1766, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; } }
+
+/* line 1775, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip; }
+
+@-webkit-keyframes flipInX {
+  /* line 1784, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0; }
+
+  /* line 1792, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+  /* line 1799, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+
+  /* line 1805, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+
+  /* line 1810, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+@keyframes flipInX {
+  /* line 1817, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0; }
+
+  /* line 1826, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+  /* line 1834, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+
+  /* line 1841, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+
+  /* line 1847, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+/* line 1854, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX; }
+
+@-webkit-keyframes flipInY {
+  /* line 1863, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0; }
+
+  /* line 1871, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+  /* line 1878, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1; }
+
+  /* line 1884, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
+
+  /* line 1889, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+@keyframes flipInY {
+  /* line 1896, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0; }
+
+  /* line 1905, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+
+  /* line 1913, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1; }
+
+  /* line 1920, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg); }
+
+  /* line 1926, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+/* line 1933, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY; }
+
+@-webkit-keyframes flipOutX {
+  /* line 1942, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+
+  /* line 1947, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+
+  /* line 1953, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes flipOutX {
+  /* line 1961, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px); }
+
+  /* line 1967, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+
+  /* line 1974, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+/* line 1982, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.flipOutX {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important; }
+
+@-webkit-keyframes flipOutY {
+  /* line 1993, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+
+  /* line 1998, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+
+  /* line 2004, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes flipOutY {
+  /* line 2012, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px); }
+
+  /* line 2018, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1; }
+
+  /* line 2025, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0; } }
+
+/* line 2033, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.flipOutY {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipOutY;
+  animation-name: flipOutY;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s; }
+
+@-webkit-keyframes lightSpeedIn {
+  /* line 2044, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+
+  /* line 2050, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1; }
+
+  /* line 2056, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1; }
+
+  /* line 2062, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes lightSpeedIn {
+  /* line 2070, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    -ms-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+
+  /* line 2077, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    -webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1; }
+
+  /* line 2084, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  80% {
+    -webkit-transform: skewX(-5deg);
+    -ms-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1; }
+
+  /* line 2091, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2099, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out; }
+
+@-webkit-keyframes lightSpeedOut {
+  /* line 2107, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 2111, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+
+@keyframes lightSpeedOut {
+  /* line 2119, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 2123, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+    -ms-transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0; } }
+
+/* line 2131, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.lightSpeedOut {
+  -webkit-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in; }
+
+@-webkit-keyframes rotateIn {
+  /* line 2139, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+
+  /* line 2147, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateIn {
+  /* line 2157, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    -ms-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0; }
+
+  /* line 2167, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2178, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn; }
+
+@-webkit-keyframes rotateInDownLeft {
+  /* line 2184, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
+
+  /* line 2192, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInDownLeft {
+  /* line 2202, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    -ms-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; }
+
+  /* line 2212, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2223, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft; }
+
+@-webkit-keyframes rotateInDownRight {
+  /* line 2229, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+
+  /* line 2237, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInDownRight {
+  /* line 2247, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -ms-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+
+  /* line 2257, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2268, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateInDownRight {
+  -webkit-animation-name: rotateInDownRight;
+  animation-name: rotateInDownRight; }
+
+@-webkit-keyframes rotateInUpLeft {
+  /* line 2274, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+
+  /* line 2282, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInUpLeft {
+  /* line 2292, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -ms-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; }
+
+  /* line 2302, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2313, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft; }
+
+@-webkit-keyframes rotateInUpRight {
+  /* line 2319, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0; }
+
+  /* line 2327, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateInUpRight {
+  /* line 2337, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -90deg);
+    -ms-transform: rotate3d(0, 0, 1, -90deg);
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0; }
+
+  /* line 2347, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+/* line 2358, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateInUpRight {
+  -webkit-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight; }
+
+@-webkit-keyframes rotateOut {
+  /* line 2364, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1; }
+
+  /* line 2370, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0; } }
+
+@keyframes rotateOut {
+  /* line 2380, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    opacity: 1; }
+
+  /* line 2387, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    -ms-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0; } }
+
+/* line 2398, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+  animation-name: rotateOut; }
+
+@-webkit-keyframes rotateOutDownLeft {
+  /* line 2404, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+
+  /* line 2410, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+
+@keyframes rotateOutDownLeft {
+  /* line 2420, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+
+  /* line 2427, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    -ms-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0; } }
+
+/* line 2438, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateOutDownLeft {
+  -webkit-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft; }
+
+@-webkit-keyframes rotateOutDownRight {
+  /* line 2444, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+
+  /* line 2450, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+@keyframes rotateOutDownRight {
+  /* line 2460, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+
+  /* line 2467, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    -ms-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+/* line 2478, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateOutDownRight {
+  -webkit-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight; }
+
+@-webkit-keyframes rotateOutUpLeft {
+  /* line 2484, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+
+  /* line 2490, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+@keyframes rotateOutUpLeft {
+  /* line 2500, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    opacity: 1; }
+
+  /* line 2507, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    -ms-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0; } }
+
+/* line 2518, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateOutUpLeft {
+  -webkit-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft; }
+
+@-webkit-keyframes rotateOutUpRight {
+  /* line 2524, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+
+  /* line 2530, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0; } }
+
+@keyframes rotateOutUpRight {
+  /* line 2540, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    opacity: 1; }
+
+  /* line 2547, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    transform-origin: right bottom;
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    -ms-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0; } }
+
+/* line 2558, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rotateOutUpRight {
+  -webkit-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight; }
+
+@-webkit-keyframes hinge {
+  /* line 2564, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+
+  /* line 2571, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+
+  /* line 2580, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+
+  /* line 2590, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0; } }
+
+@keyframes hinge {
+  /* line 2598, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+
+  /* line 2606, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    -ms-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; }
+
+  /* line 2617, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    -ms-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1; }
+
+  /* line 2629, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+    -ms-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0; } }
+
+/* line 2637, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.hinge {
+  -webkit-animation-name: hinge;
+  animation-name: hinge; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes rollIn {
+  /* line 2645, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
+
+  /* line 2651, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes rollIn {
+  /* line 2659, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    -ms-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
+
+  /* line 2666, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+/* line 2674, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes rollOut {
+  /* line 2682, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 2686, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+
+@keyframes rollOut {
+  /* line 2694, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 2698, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    -ms-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg); } }
+
+/* line 2706, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.rollOut {
+  -webkit-animation-name: rollOut;
+  animation-name: rollOut; }
+
+@-webkit-keyframes zoomIn {
+  /* line 2712, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+
+  /* line 2718, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  /* line 2724, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+
+  /* line 2731, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    opacity: 1; } }
+
+/* line 2736, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+@-webkit-keyframes zoomInDown {
+  /* line 2742, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2750, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  /* line 2760, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2769, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2779, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomInDown {
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown; }
+
+@-webkit-keyframes zoomInLeft {
+  /* line 2785, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2793, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInLeft {
+  /* line 2803, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2812, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2822, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomInLeft {
+  -webkit-animation-name: zoomInLeft;
+  animation-name: zoomInLeft; }
+
+@-webkit-keyframes zoomInRight {
+  /* line 2828, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2836, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInRight {
+  /* line 2846, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2855, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2865, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomInRight {
+  -webkit-animation-name: zoomInRight;
+  animation-name: zoomInRight; }
+
+@-webkit-keyframes zoomInUp {
+  /* line 2871, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2879, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInUp {
+  /* line 2889, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2898, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2908, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomInUp {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp; }
+
+@-webkit-keyframes zoomOut {
+  /* line 2914, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 2918, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+
+  /* line 2924, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0; } }
+
+@keyframes zoomOut {
+  /* line 2930, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 2934, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    -ms-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3); }
+
+  /* line 2941, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0; } }
+
+/* line 2946, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut; }
+
+@-webkit-keyframes zoomOutDown {
+  /* line 2952, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2960, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomOutDown {
+  /* line 2972, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 2981, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 2994, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomOutDown {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown; }
+
+@-webkit-keyframes zoomOutLeft {
+  /* line 3000, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0); }
+
+  /* line 3006, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform: scale(.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: left center;
+    transform-origin: left center; } }
+
+@keyframes zoomOutLeft {
+  /* line 3016, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0); }
+
+  /* line 3023, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.1) translate3d(-2000px, 0, 0);
+    -ms-transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform: scale(.1) translate3d(-2000px, 0, 0);
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center; } }
+
+/* line 3034, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomOutLeft {
+  -webkit-animation-name: zoomOutLeft;
+  animation-name: zoomOutLeft; }
+
+@-webkit-keyframes zoomOutRight {
+  /* line 3040, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0); }
+
+  /* line 3046, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.1) translate3d(2000px, 0, 0);
+    transform: scale(.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center; } }
+
+@keyframes zoomOutRight {
+  /* line 3056, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0); }
+
+  /* line 3063, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.1) translate3d(2000px, 0, 0);
+    -ms-transform: scale(.1) translate3d(2000px, 0, 0);
+    transform: scale(.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center; } }
+
+/* line 3074, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomOutRight {
+  -webkit-animation-name: zoomOutRight;
+  animation-name: zoomOutRight; }
+
+@-webkit-keyframes zoomOutUp {
+  /* line 3080, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 3088, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomOutUp {
+  /* line 3100, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+  /* line 3109, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+/* line 3122, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.zoomOutUp {
+  -webkit-animation-name: zoomOutUp;
+  animation-name: zoomOutUp; }
+
+@-webkit-keyframes slideInDown {
+  /* line 3128, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible; }
+
+  /* line 3134, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slideInDown {
+  /* line 3141, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible; }
+
+  /* line 3148, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+
+/* line 3155, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown; }
+
+@-webkit-keyframes slideInLeft {
+  /* line 3161, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible; }
+
+  /* line 3167, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slideInLeft {
+  /* line 3174, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible; }
+
+  /* line 3181, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+
+/* line 3188, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft; }
+
+@-webkit-keyframes slideInRight {
+  /* line 3194, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible; }
+
+  /* line 3200, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes slideInRight {
+  /* line 3207, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible; }
+
+  /* line 3214, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+
+/* line 3221, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight; }
+
+@-webkit-keyframes slideInUp {
+  /* line 3227, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible; }
+
+  /* line 3233, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slideInUp {
+  /* line 3240, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible; }
+
+  /* line 3247, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+
+/* line 3254, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp; }
+
+@-webkit-keyframes slideOutDown {
+  /* line 3260, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 3265, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+@keyframes slideOutDown {
+  /* line 3273, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 3279, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%); } }
+
+/* line 3287, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown; }
+
+@-webkit-keyframes slideOutLeft {
+  /* line 3293, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+
+  /* line 3298, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+@keyframes slideOutLeft {
+  /* line 3306, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+  /* line 3312, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%); } }
+
+/* line 3320, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft; }
+
+@-webkit-keyframes slideOutRight {
+  /* line 3326, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+
+  /* line 3331, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+@keyframes slideOutRight {
+  /* line 3339, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+  /* line 3345, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); } }
+
+/* line 3353, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideOutRight {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight; }
+
+@-webkit-keyframes slideOutUp {
+  /* line 3359, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 3364, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+@keyframes slideOutUp {
+  /* line 3372, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  /* line 3378, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+  100% {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); } }
+
+/* line 3386, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/vendor/_animate.scss */
+.slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp; }
+
+/*
+|
+| Include special css files
+|
+*/
+/*
+|
+|
+|	Contains the variables we'll use throughout the project
+|
+|
+*/
+/*
+|
+| Include all other css files
+|
+*/
+/*
+|
+|
+|	layout.scss - basic app layout css
+|
+|
+*/
+/* line 12, /Users/gerwinvanroyen/Documents/Code/flourjs-app/app/css/_layout.scss */
+.top-bar {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: solid 1px #eee;
+  line-height: 60px; }

@@ -1,0 +1,2 @@
+flour.addTemplate('home', '<div class=\"container\"><div class=\"row\"><div class=\"eight columns\"><h1>Welcome to flourjs</h1><p>Welcome.</p></div><div class=\"four columns\"></div></div></div>');
+flour.addTemplate('main', '<div class=\"top-bar\"></div><div class=\"content\"></div>');
